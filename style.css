@@ -1,0 +1,71 @@
+/* reset START */
+html, body {
+  margin: 0;
+  padding: 0;
+}
+/* reset END */
+
+body {
+  background: #eee;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+}
+.canvas {
+  width: 500px;
+  height: 500px;
+  background: #fff;
+  border-radius: 1em;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, .1);
+}
+.controls {
+  margin-top: 10px;
+}
+.controls__colors {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  margin-top: 20px;
+}
+.controls__colors .controls_color {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, .1);
+  box-sizing: border-box;
+}
+.controls__colors .controls_color.on {
+  border: 3px solid #000;
+}
+.controls__btns {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  margin-top: 10px;
+}
+.controls__btns button {
+  width: 80px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, .1);
+  border: 1px solid #000;
+  background: none;
+}
+.controls__btns button:active {
+  transform: scale(0.9);
+}
+.controls__range {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.controls__range input[type="range"] {
+  width: 300px;
+}
